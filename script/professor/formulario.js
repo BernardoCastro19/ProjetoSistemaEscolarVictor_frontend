@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         urlCadastrar: 'http://localhost:8080/AppCorporativaMavenWeb/professores',
         urlEditar: 'http://localhost:8080/AppCorporativaMavenWeb/professores',
         urlCargaDados: 'http://localhost:8080/AppCorporativaMavenWeb/professores/id=',
+        token: localStorage.getItem("tokenAppCorporativa"),
     };
     appCorporativa.criarFormulario(
         parametros
