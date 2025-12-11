@@ -12,14 +12,13 @@
     <h2>Entrar no Sistema</h2>
     <p>Escolha um provedor de login:</p>
     <button onclick="loginComGoogle()">Login com Google</button>
-    <button onclick="loginComKeycloak()">Login com Keycloak</button>
     <link rel="stylesheet" href="style-login.css"/>
   </div>
 
   <script>
     // Configurações dos endpoints OAuth2
-    const GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/auth";
-    const GOOGLE_CLIENT_ID = "857097832367-lia8fmbebs5qv7b1g558ft2j08u6meg2.apps.googleusercontent.com";
+    const GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth";
+    const GOOGLE_CLIENT_ID = "1016403163771-actiqtdtn7vv8sjplc4b1sk3ukns5lbm.apps.googleusercontent.com";
     const REDIRECT_URI = "http://localhost:80/frontend/public/retorno-autenticacao.html"; // página que vai receber o code
 
     const KEYCLOAK_AUTH_URL = "http://localhost:8080/realms/meu-reino/protocol/openid-connect/auth";
@@ -43,4 +42,3 @@
   </script>
 </body>
 </html>
-
